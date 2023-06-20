@@ -16,6 +16,6 @@ jobs:
           password: ${{ secrets.MY_PAT_TOKEN }}
       - name: Test
         run: |
-          docker build . --tag ghcr.io/deselikem/hello-docker-gcr-demo:latest
-          docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
-          docker push ghcr.io/deselikem/hello-docker-gcr-demo:latest
+          docker build . --tag ghcr.io/wallashing/publish-php-docker-image:latest
+          docker run ghcr.io/wallashing/publish-php-docker-image:latest
+          docker push ghcr.io/wallashing/publish-php-docker-image:latest
