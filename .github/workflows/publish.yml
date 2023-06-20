@@ -1,7 +1,7 @@
-name: publish
+name: publish php docker image
 on: [push]
 jobs:
-  publish-hello-docker-image:
+  publish-php-docker-image:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
