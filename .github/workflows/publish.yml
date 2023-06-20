@@ -11,7 +11,7 @@ jobs:
           registry: ghcr.io
           username: WallAshing
           password: ${{ secrets.MY_PAT_TOKEN }}
-        run: |
-          docker build . --tag ghcr.io/deselikem/hello-docker-gcr-demo:latest
-          docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
-          docker push ghcr.io/deselikem/hello-docker-gcr-demo:latest
+          run: |
+            docker build . --tag ghcr.io/deselikem/hello-docker-gcr-demo:latest
+            docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
+            docker push ghcr.io/deselikem/hello-docker-gcr-demo:latest
